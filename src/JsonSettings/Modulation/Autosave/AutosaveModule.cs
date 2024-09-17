@@ -1,7 +1,7 @@
 ﻿using Nucs.JsonSettings.Modulation;
 
 namespace Nucs.JsonSettings.Autosave {
-    public class AutosaveModule : Module {
+    public partial class AutosaveModule : Module {
         internal static readonly string[] _frameworkParameters = {nameof(JsonSettings.FileName), nameof(JsonSettings.Modulation)};
         internal static readonly int _frameworkParametersLength = _frameworkParameters.Length;
         

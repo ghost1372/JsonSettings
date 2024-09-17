@@ -45,7 +45,7 @@ namespace Nucs.JsonSettings
 
     #endregion
 
-    public abstract class JsonSettings : ISavable, IDisposable {
+    public abstract partial class JsonSettings : ISavable, IDisposable {
         #region Static
 
         /// <summary>

@@ -6,7 +6,7 @@ namespace Nucs.JsonSettings.Modulation.Recovery {
     /// <summary>
     ///     Takes care of recovering from errors when trying to parse the json file
     /// </summary>
-    public class RecoveryModule : Module {
+    public partial class RecoveryModule : Module {
         public RecoveryAction RecoveryAction { get; set; }
         protected string loadedPath; //the attempted load path
         protected volatile int internalCalls; //guard for event handling

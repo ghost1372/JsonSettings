@@ -3,7 +3,7 @@ using System.Runtime.Serialization;
 
 namespace Nucs.JsonSettings.Modulation {
     [Serializable]
-    public class InvalidVersionException : Exception {
+    public partial class InvalidVersionException : Exception {
         public InvalidVersionException() { }
         public InvalidVersionException(string message) : base(message) { }
         public InvalidVersionException(string message, Exception inner) : base(message, inner) { }

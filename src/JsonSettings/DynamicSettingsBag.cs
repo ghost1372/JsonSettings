@@ -5,7 +5,7 @@ namespace Nucs.JsonSettings {
     /// <summary>
     ///     A dynamic wrapper to a <see cref="SettingsBag"/>.
     /// </summary>
-    public sealed class DynamicSettingsBag : DynamicObject, IDisposable {
+    public sealed partial class DynamicSettingsBag : DynamicObject, IDisposable {
         private SettingsBag _bag { get; set; }
 
         /// <summary>

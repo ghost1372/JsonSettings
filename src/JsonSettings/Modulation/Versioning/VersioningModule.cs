@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 
 namespace Nucs.JsonSettings.Modulation
 {
-    public class VersioningModule {
+    public partial class VersioningModule {
         /// <summary>
         ///     The default policy used for <see cref="VersioningModule{T}"/>.<br/>
         ///     By default: returns true if expectedVersion is null or expectedVersion.Equals(version)
@@ -28,7 +28,7 @@ namespace Nucs.JsonSettings.Modulation
     ///     detects an invalid version. A policy is a comparer between two <see cref="Version"/>.
     /// </summary>
     /// <typeparam name="T">The settings type inheriting <see cref="IVersionable"/></typeparam>
-    public class VersioningModule<T> : Module where T : JsonSettings, IVersionable {
+    public partial class VersioningModule<T> : Module where T : JsonSettings, IVersionable {
         // ReSharper disable once StaticMemberInGenericType
         private static VersioningPolicyHandler? _defaultPolicy;
         protected volatile int internalCalls; //guard for event handling

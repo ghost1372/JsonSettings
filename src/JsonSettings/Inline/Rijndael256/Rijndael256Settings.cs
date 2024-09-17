@@ -11,7 +11,7 @@ namespace Rijndael256
     /// <summary>
     /// A collection of mutable defaults
     /// </summary>
-    internal static class Rijndael256Settings
+    internal static partial class Rijndael256Settings
     {
         static Rijndael256Settings()
         {

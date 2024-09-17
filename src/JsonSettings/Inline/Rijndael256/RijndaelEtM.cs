@@ -17,7 +17,7 @@ namespace Rijndael256
     /// AES implementation of the Rijndael symmetric-key cipher using
     /// the Encrypt-then-MAC (EtM) mode for Authenticated Encryption.
     /// </summary>
-    internal class RijndaelEtM : Rijndael
+    internal partial class RijndaelEtM : Rijndael
     {
         /// <summary>
         /// Encrypts plaintext using the Encrypt-then-MAC (EtM) mode via the Rijndael cipher in 

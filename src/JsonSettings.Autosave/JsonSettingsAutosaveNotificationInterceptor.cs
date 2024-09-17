@@ -10,7 +10,7 @@ namespace Nucs.JsonSettings.Autosave
     ///     Intercepts and binds to NotificationChanged property.
     /// </summary>
     [Serializable]
-    public class JsonSettingsAutosaveNotificationInterceptor : IInterceptor, IDisposable {
+    public partial class JsonSettingsAutosaveNotificationInterceptor : IInterceptor, IDisposable {
         private readonly JsonSettings _settings;
         private AutosaveModule _module;
 

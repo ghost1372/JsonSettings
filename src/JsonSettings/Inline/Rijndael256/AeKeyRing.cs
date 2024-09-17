@@ -13,7 +13,7 @@ namespace Rijndael256
     /// <summary>
     /// Authenticated Encryption keys.
     /// </summary>
-    internal class AeKeyRing
+    internal partial class AeKeyRing
     {
         // The generated hash is 512-bit (128 chars)
         // We split that into two 256-bit keys (64 chars each)

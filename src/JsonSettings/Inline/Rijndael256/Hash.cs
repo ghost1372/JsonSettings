@@ -16,7 +16,7 @@ namespace Rijndael256
     /// <summary>
     /// Cryptographic hash functions.
     /// </summary>
-    internal static class Hash
+    internal static partial class Hash
     {
         /// <summary>
         /// Generates a SHA-512 hash from the specified <paramref name="data"/>.

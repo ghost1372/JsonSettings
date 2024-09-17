@@ -13,7 +13,7 @@ namespace Nucs.JsonSettings.Autosave {
     ///     Takes care of binding nested objects that implement <see cref="INotifyCollectionChanged"/> and/or <see cref="INotifyPropertyChanged"/>. 
     /// </summary>
     [Serializable]
-    public class NotificationBinder : IDisposable {
+    public partial class NotificationBinder : IDisposable {
         private readonly NotifiyingJsonSettings _settings;
         private readonly HashSet<string> _properties;
         private readonly ConcurrentDictionary<string, (PropertyInfo Property, MethodInfo GetMethod, MethodInfo SetMethod, object CurrentValue)> _monitoredPropertiesTable;

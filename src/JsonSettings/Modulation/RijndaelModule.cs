@@ -8,8 +8,8 @@ namespace Nucs.JsonSettings.Modulation {
     /// <summary>
     ///     This module encrypts the configuration with Rijndael Algorithm, aka AES256.
     /// </summary>
-    /// <remarks>This module uses internal class to perform the encryption and is not publicly exposed.<br></br>The password is stored as <see cref="SecureString"/> in memory.</remarks>
-    public class RijndaelModule : Module {
+    /// <remarks>This module uses internal partial class to perform the encryption and is not publicly exposed.<br></br>The password is stored as <see cref="SecureString"/> in memory.</remarks>
+    public partial class RijndaelModule : Module {
         public static readonly SecureString EmptyString = "".ToSecureString();
 
         private Func<SecureString>? _fetcher;

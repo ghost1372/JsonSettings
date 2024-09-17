@@ -6,7 +6,7 @@ namespace Nucs.JsonSettings.Examples {
     ///     A <see cref="JsonSettings"/> that implements <see cref="INotifyPropertyChanged"/>.
     /// </summary>
     /// <remarks>Implementing this class instead of JsonSettings will bind All notification changes to trigger autosaving (not more than once a second).</remarks>
-    public abstract class NotifiyingJsonSettings : JsonSettings, INotifyPropertyChanged {
+    public abstract partial class NotifiyingJsonSettings : JsonSettings, INotifyPropertyChanged {
         protected NotifiyingJsonSettings() { }
         protected NotifiyingJsonSettings(string fileName) : base(fileName) { }
 

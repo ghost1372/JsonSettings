@@ -9,7 +9,7 @@ namespace Nucs.JsonSettings.Collections
     ///     And Add will add or set value.
     /// </summary>
     [DebuggerStepThrough]
-    internal class SafeDictionary<TKey, TValue> : ConcurrentDictionary<TKey, TValue> {
+    internal partial class SafeDictionary<TKey, TValue> : ConcurrentDictionary<TKey, TValue> {
         /// <summary>
         ///     Returns either the value or if not found - the default.
         /// </summary>

@@ -11,7 +11,7 @@ namespace Nucs.JsonSettings.Inline
     /// <summary>
     ///     Class that determines paths.
     /// </summary>
-    internal static class Paths {
+    internal static partial class Paths {
         #region GetModuleFileNameLongPath
 
         private const int MAX_PATH = 260;
@@ -229,7 +229,7 @@ private static string GetModuleFileNameLongPath() {
         public static string RemoveIllegalPathCharacters(string filename, string replacewith = "") =>
             string.Join(replacewith, filename.Split(Path.GetInvalidFileNameChars()));
 
-        public class FilePathEqualityComparer : IEqualityComparer<string> {
+        public partial class FilePathEqualityComparer : IEqualityComparer<string> {
             public bool Equals(string x, string y) {
                 return Paths.CompareTo(x, y);
             }
@@ -239,7 +239,7 @@ private static string GetModuleFileNameLongPath() {
             }
         }
 
-        public class FileInfoPathEqualityComparer : IEqualityComparer<FileSystemInfo> {
+        public partial class FileInfoPathEqualityComparer : IEqualityComparer<FileSystemInfo> {
             public bool Equals(FileSystemInfo x, FileSystemInfo y) {
                 return Paths.CompareTo(x, y);
             }

@@ -3,7 +3,7 @@
 // ReSharper disable once CheckNamespace
 namespace System.Security
 {
-    public static class SecureStringExt {
+    public static partial class SecureStringExt {
         public static SecureString EmptyString { get; } = new SecureString();
         static SecureStringExt() {
             EmptyString.MakeReadOnly();

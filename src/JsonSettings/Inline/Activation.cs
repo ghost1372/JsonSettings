@@ -5,7 +5,7 @@ using System.Reflection;
 
 namespace Nucs.JsonSettings
 {
-    public static class Activation {
+    public static partial class Activation {
         public static IEnumerable<ConstructorInfo> GetAllConstructors(this Type t) => t.GetConstructors().Concat(t.GetConstructors(BindingFlags.NonPublic | BindingFlags.Instance));
         /// <summary>
         ///     Does the type have public/private/protected/internal.
@@ -62,7 +62,7 @@ namespace Nucs.JsonSettings
         }
     }
 
-    public class ReflectiveException : Exception {
+    public partial class ReflectiveException : Exception {
         public ReflectiveException() { }
         public ReflectiveException(string message) : base(message) { }
         public ReflectiveException(string message, Exception inner) : base(message, inner) { }

@@ -15,7 +15,7 @@ namespace Rijndael256 {
     /// <summary>
     /// AES implementation of the Rijndael symmetric-key cipher.
     /// </summary>
-    internal class Rijndael {
+    internal partial class Rijndael {
         internal const int InitializationVectorSize = 16;
         internal const CipherMode BlockCipherMode = CipherMode.CBC;
 

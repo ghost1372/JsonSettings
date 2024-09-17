@@ -5,7 +5,7 @@ namespace Nucs.JsonSettings.Modulation
     /// <summary>
     ///     A module that can be attached to a <see cref="ISocket"/>
     /// </summary>
-    public abstract class Module : IDisposable {
+    public abstract partial class Module : IDisposable {
         internal bool _isattached = false;
         /// <summary>
         ///     The socket this Module is attached to. This is set when calling <see cref="Attach"/>

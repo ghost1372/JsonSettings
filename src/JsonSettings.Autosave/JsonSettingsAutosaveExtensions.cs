@@ -8,7 +8,7 @@ using BindingFlags = System.Reflection.BindingFlags;
 
 namespace Nucs.JsonSettings.Autosave
 {
-    internal static class TypeValidation<T> where T : JsonSettings {
+    internal static partial class TypeValidation<T> where T : JsonSettings {
         // ReSharper disable once StaticMemberInGenericType
         private static bool _validated;
 
@@ -60,7 +60,7 @@ namespace Nucs.JsonSettings.Autosave
         }
     }
 
-    public static class JsonSettingsAutosaveExtensions {
+    public static partial class JsonSettingsAutosaveExtensions {
         // ReSharper disable once FieldCanBeMadeReadOnly.Global
         public static ProxyGenerationOptions Options;
 

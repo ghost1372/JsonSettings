@@ -6,7 +6,7 @@ namespace Nucs.JsonSettings.Modulation
     /// <summary>
     ///     A subclass to manage modulation of a JsonSettings
     /// </summary>
-    public class ModuleSocket : ISocket, IDisposable {
+    public partial class ModuleSocket : ISocket, IDisposable {
         private JsonSettings _settings { get; set; }
 
         protected readonly List<Module> _modules = new List<Module>();

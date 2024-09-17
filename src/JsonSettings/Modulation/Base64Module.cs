@@ -6,7 +6,7 @@ namespace Nucs.JsonSettings.Modulation
     /// <summary>
     ///     Will convert text to base64, not pure json.
     /// </summary>
-    public class Base64Module : Module {
+    public partial class Base64Module : Module {
 
         public Base64Module() { }
 

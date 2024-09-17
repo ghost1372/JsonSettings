@@ -6,7 +6,7 @@ namespace Nucs.JsonSettings.Modulation {
     /// </summary>
     /// <remarks>In-case of inheritence, it'll use the first attribute returnd which is the child's class attribute.</remarks>
     [AttributeUsage(AttributeTargets.Property, Inherited = true, AllowMultiple = false)]
-    public sealed class EnforcedVersionAttribute : Attribute {
+    public sealed partial class EnforcedVersionAttribute : Attribute {
         /// <summary>
         ///     The expected version of the loaded settings
         /// </summary>

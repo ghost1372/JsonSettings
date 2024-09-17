@@ -13,7 +13,7 @@ namespace Nucs.JsonSettings.Autosave
     ///     Intercepts and performs autosave on write
     /// </summary>
     [Serializable]
-    public class JsonSettingsAutosaveInterceptor : IInterceptor {
+    public partial class JsonSettingsAutosaveInterceptor : IInterceptor {
         private readonly JsonSettings _settings;
         private readonly HashSet<string> _monitoredProperties;
         private AutosaveModule _module;

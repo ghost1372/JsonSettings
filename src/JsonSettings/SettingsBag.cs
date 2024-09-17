@@ -13,7 +13,7 @@ namespace Nucs.JsonSettings
     ///     A dynamic settings class, adds settings as you go.
     /// </summary>
     /// <remarks>SettingsBag is threadsafe by using <see cref="ConcurrentDictionary{TKey,TValue}"/>.</remarks>
-    public sealed class SettingsBag : JsonSettings {
+    public sealed partial class SettingsBag : JsonSettings {
         private readonly SafeDictionary<string, object> _data = new SafeDictionary<string, object>();
         private readonly SafeDictionary<string, PropertyInfo> PropertyData = new SafeDictionary<string, PropertyInfo>();
         private AutosaveModule? _autosaveModule; //TODO: this potentially can support WPF binding

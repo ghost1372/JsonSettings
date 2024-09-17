@@ -10,7 +10,7 @@ using System.Security.Cryptography;
 
 namespace Rijndael256
 {
-    internal static class Rng
+    internal static partial class Rng
     {
         static Rng()
         {
