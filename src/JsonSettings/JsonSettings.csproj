@@ -4,8 +4,8 @@
 	<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
     <AssemblyVersion>2.0.1</AssemblyVersion>
     <IsAotCompatible Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net7.0'))">true</IsAotCompatible>    <FileVersion>2.0.1</FileVersion>
-    <Authors>Nucs / Eli Belash</Authors>
-    <Company>Nucs / Eli Belash</Company>
+    <Authors>Mahdi Hosseini</Authors>
+    <Company>Mahdi Hosseini</Company>
 	<Summary>Easiest way you'll ever write settings for your app. Cross-platform, modular and still a one-liner.
 Encrypt, Encode and have full control over hardcoded / dynamic settings.</Summary>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -17,10 +17,10 @@ Encrypt, Encode and have full control over hardcoded / dynamic settings.</Summar
     <PackageTags>nucs config file newtonsoft settings json configuration preferences</PackageTags>
     <NeutralLanguage />
     <SignAssembly>false</SignAssembly>
-    <Copyright>Eli Belash @ 2023</Copyright>
+    <Copyright>Mahdi Hosseini @ 2024</Copyright>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>Nucs.JsonSettings</RootNamespace>
-    <PackageId>Nucs.JsonSettings</PackageId>
+    <PackageId>Nucs.JsonSettings2</PackageId>
     <PackageVersion>2.0.2</PackageVersion>
     <Title>Nucs.JsonSettings</Title>
     <PackageReleaseNotes>- Added RecoveryModule  and .WithRecovery to capture parsing errors
@@ -45,7 +45,7 @@ Encrypt, Encode and have full control over hardcoded / dynamic settings.</Summar
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <NoWarn>CS8625;CS8600;CS8602;CS8616;CS8604;CS8601;CS8603;NU5125;NU5048;CS0109</NoWarn>
+    <NoWarn>CS0168;CS8618;CS8625;CS8600;CS8602;CS8616;CS8604;CS8601;CS8603;NU5125;NU5048;CS0109;CS0219</NoWarn>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="Autosave\**" />
