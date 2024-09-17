@@ -5,9 +5,9 @@ using System.IO;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace Nucs.JsonSettings.Inline {
+namespace Nucs.JsonSettings.Inline
+{
     /// <summary>
     ///     Class that determines paths.
     /// </summary>

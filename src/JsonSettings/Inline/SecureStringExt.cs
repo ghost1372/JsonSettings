@@ -1,9 +1,8 @@
-﻿using System;
-using System.Runtime.InteropServices;
-using System.Security;
+﻿using System.Runtime.InteropServices;
 
 // ReSharper disable once CheckNamespace
-namespace System.Security {
+namespace System.Security
+{
     public static class SecureStringExt {
         public static SecureString EmptyString { get; } = new SecureString();
         static SecureStringExt() {

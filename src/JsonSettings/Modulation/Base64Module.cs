@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Security;
-using System.Security.Cryptography;
-using Rijndael256;
-using Rijndael = Rijndael256.Rijndael;
 
-namespace Nucs.JsonSettings.Modulation {
+namespace Nucs.JsonSettings.Modulation
+{
 
     /// <summary>
     ///     Will convert text to base64, not pure json.

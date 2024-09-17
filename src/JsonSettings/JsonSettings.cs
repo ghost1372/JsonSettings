@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Runtime.Serialization.Formatters;
 using System.Text;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
@@ -12,9 +8,9 @@ using Nucs.JsonSettings.Autosave;
 using Nucs.JsonSettings.Fluent;
 using Nucs.JsonSettings.Inline;
 using Nucs.JsonSettings.Modulation;
-using Module = Nucs.JsonSettings.Modulation.Module;
 
-namespace Nucs.JsonSettings {
+namespace Nucs.JsonSettings
+{
     #region Delegates
 
     public delegate void BeforeLoadHandler(JsonSettings sender, ref string destinition);

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31313.381
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35309.182
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonSettings", "src\JsonSettings\JsonSettings.csproj", "{4040992B-F808-4875-B881-8C3A4397D8D3}"
 EndProject
@@ -16,11 +16,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{76A13B45-7AC9-4596-AACA-4BCCD13A1DC8}"
 EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		tests\JsonSettings.Tests.Shared\JsonSettings.Tests.Shared.projitems*{0e9a73b4-a89d-4a2d-baed-1a257f090c62}*SharedItemsImports = 5
-		tests\JsonSettings.Tests.Shared\JsonSettings.Tests.Shared.projitems*{2cc10b52-fdab-4a07-b736-1c9285441ad9}*SharedItemsImports = 4
-		tests\JsonSettings.Tests.Shared\JsonSettings.Tests.Shared.projitems*{77971a5b-dcb1-4c9d-96fc-7022821ca64d}*SharedItemsImports = 13
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|ARM = Debug|ARM
@@ -125,5 +120,9 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E937C322-8F5A-420A-9051-EEBB3DE3A22F}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		tests\JsonSettings.Tests.Shared\JsonSettings.Tests.Shared.projitems*{0e9a73b4-a89d-4a2d-baed-1a257f090c62}*SharedItemsImports = 5
+		tests\JsonSettings.Tests.Shared\JsonSettings.Tests.Shared.projitems*{77971a5b-dcb1-4c9d-96fc-7022821ca64d}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal

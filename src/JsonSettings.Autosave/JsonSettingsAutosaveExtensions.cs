@@ -1,16 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Diagnostics;
-using System.Diagnostics.Tracing;
 using System.Linq;
-using System.Reflection;
-using System.Runtime.CompilerServices;
 using Castle.DynamicProxy;
 using Nucs.JsonSettings.Examples;
 using BindingFlags = System.Reflection.BindingFlags;
 
-namespace Nucs.JsonSettings.Autosave {
+namespace Nucs.JsonSettings.Autosave
+{
     internal static class TypeValidation<T> where T : JsonSettings {
         // ReSharper disable once StaticMemberInGenericType
         private static bool _validated;

@@ -3,9 +3,9 @@ using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using Castle.DynamicProxy;
-using Newtonsoft.Json;
 
-namespace Nucs.JsonSettings.Autosave {
+namespace Nucs.JsonSettings.Autosave
+{
     /// <summary>
     ///     Intercepts and binds to NotificationChanged property.
     /// </summary>

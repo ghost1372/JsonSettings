@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Runtime.Serialization;
 
-namespace Nucs.JsonSettings.Modulation.Recovery {
+namespace Nucs.JsonSettings.Modulation.Recovery
+{
     [Serializable]
     public class JsonSettingsRecoveryException : JsonSettingsException {
         //

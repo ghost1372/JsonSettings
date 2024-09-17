@@ -3,9 +3,9 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text.RegularExpressions;
-using Newtonsoft.Json;
 
-namespace Nucs.JsonSettings.Modulation {
+namespace Nucs.JsonSettings.Modulation
+{
     public class VersioningModule {
         /// <summary>
         ///     The default policy used for <see cref="VersioningModule{T}"/>.<br/>

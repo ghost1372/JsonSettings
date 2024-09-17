@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -8,7 +7,8 @@ using Castle.DynamicProxy;
 using Newtonsoft.Json;
 using BindingFlags = System.Reflection.BindingFlags;
 
-namespace Nucs.JsonSettings.Autosave {
+namespace Nucs.JsonSettings.Autosave
+{
     /// <summary>
     ///     Intercepts and performs autosave on write
     /// </summary>

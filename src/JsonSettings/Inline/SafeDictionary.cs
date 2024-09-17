@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Concurrent;
+﻿using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Text;
 
-namespace Nucs.JsonSettings.Collections {
+namespace Nucs.JsonSettings.Collections
+{
     /// <summary>
     ///     A dictionary that returns default(T) incase of not existing value.
     ///     And Add will add or set value.

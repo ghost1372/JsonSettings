@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 
-namespace Nucs.JsonSettings.Modulation {
+namespace Nucs.JsonSettings.Modulation
+{
     /// <summary>
     ///     A class that can be attached to and deattached from with <see cref="Module"/>s.
     /// </summary>
