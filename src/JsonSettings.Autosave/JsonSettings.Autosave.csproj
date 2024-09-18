@@ -21,7 +21,7 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <RootNamespace>Nucs.JsonSettings.Autosave</RootNamespace>
     <PackageId>Nucs.JsonSettings2.Autosave</PackageId>
-    <PackageVersion>2.0.2</PackageVersion>
+    <PackageVersion>2.0.3</PackageVersion>
     <Title>Nucs.JsonSettings.Autosave</Title>
     <PackageReleaseNotes>- Added RecoveryModule  and .WithRecovery to capture parsing errors
 - Added JsonSettings.SuspendAutosave() extension
