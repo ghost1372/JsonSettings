@@ -21,7 +21,7 @@
     <Description>An extension to JsonSettings that allows to wrap a class via transparent proxy that autosaves. Support for Autosaving on INotifyPropertyChanged/INotifyCollectionChanged.</Description>
     <PackageTags>nucs config file newtonsoft settings json configuration preferences</PackageTags>
     <Copyright>Mahdi Hosseini @ 2024</Copyright>
-    <PackageVersion>2.0.34</PackageVersion>
+    <PackageVersion>2.0.37</PackageVersion>
   </PropertyGroup>
 
   <ItemGroup>

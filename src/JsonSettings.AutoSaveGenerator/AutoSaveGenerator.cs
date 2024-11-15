@@ -98,20 +98,13 @@ public class AutoSaveGenerator : IIncrementalGenerator
     {
         var sb = new StringBuilder();
 
-        // Add required usings
-        sb.AppendLine("using Nucs.JsonSettings.Modulation;");
-        sb.AppendLine();
-
         // File-scoped namespace
         sb.AppendLine($"namespace {classInfo.Namespace};");
         sb.AppendLine();
 
         // Start class declaration with base types if any
         var baseTypeList = classInfo.BaseTypes;
-        baseTypeList.Remove("Nucs.JsonSettings.JsonSettings");
-        baseTypeList.Remove("JsonSettings");
-        var baseTypesString = classInfo.BaseTypes.Count > 0 ? " : " + string.Join(", ", baseTypeList) : string.Empty;
-        sb.AppendLine($"{classInfo.Accessibility} partial class {classInfo.ClassName}{baseTypesString}");
+        sb.AppendLine($"{classInfo.Accessibility} partial class {classInfo.ClassName}");
         sb.AppendLine("{");
 
         foreach (var prop in classInfo.Properties)
@@ -160,7 +153,6 @@ public class AutoSaveGenerator : IIncrementalGenerator
         }
 
         sb.AppendLine("}");
-
         return sb.ToString();
     }
 
