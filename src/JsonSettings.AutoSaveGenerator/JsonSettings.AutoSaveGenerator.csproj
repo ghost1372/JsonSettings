@@ -4,24 +4,25 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>latest</LangVersion>
 
-    <IncludeBuildOutput>False</IncludeBuildOutput>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <IncludeAnalyzer>true</IncludeAnalyzer>
     <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
-
+    
     <RootNamespace>Nucs.JsonSettings.Autosave</RootNamespace>
-    <PackageId>Nucs.JsonSettings2.Autosave</PackageId>
-    <Title>Nucs.JsonSettings.Autosave</Title>
+    <PackageId>Nucs.JsonSettings.AutosaveGenerator</PackageId>
+    <Title>Nucs.JsonSettings.AutosaveGenerator</Title>
 
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
     <Authors>Mahdi Hosseini</Authors>
     <Company>Mahdi Hosseini</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseUrl>https://github.com/Nucs/JsonSettings/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/Nucs/JsonSettings</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/ghost1372/JsonSettings.AutoSaveGenerator</PackageProjectUrl>
     <PackageIconUrl>https://i.imgur.com/BOExs52.png</PackageIconUrl>
-    <Description>An extension to JsonSettings that allows to wrap a class via transparent proxy that autosaves. Support for Autosaving on INotifyPropertyChanged/INotifyCollectionChanged.</Description>
+    <Description>A generator for JsonSettings that allows to wrap a class via generator that autosaves.</Description>
     <PackageTags>nucs config file newtonsoft settings json configuration preferences</PackageTags>
     <Copyright>Mahdi Hosseini @ 2024</Copyright>
-    <PackageVersion>2.0.37</PackageVersion>
+    <PackageVersion>2.0.4</PackageVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -29,12 +30,11 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.11.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.11.0">
+        <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <None Remove="bin\Debug\netstandard2.0\\JsonSettings.AutoSaveGenerator.dll" />
-  </ItemGroup>
   <ItemGroup>
     <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
   </ItemGroup>
