@@ -38,8 +38,8 @@ public class AutoSaveGenerator : IIncrementalGenerator
             return null;
 
         bool hasTargetAttribute = classSymbol.GetAttributes()
-            .Any(attr => attr.AttributeClass?.Name == "AutoSaveAttribute" ||
-                         attr.AttributeClass?.ToDisplayString() == "AutoSave.AutoSaveAttribute");
+            .Any(attr => attr.AttributeClass?.Name == "GenerateAutoSaveOnChangeAttribute" ||
+                         attr.AttributeClass?.ToDisplayString() == "GenerateAutoSaveOnChange.GenerateAutoSaveOnChangeAttribute");
 
         if (!hasTargetAttribute)
             return null;
@@ -178,48 +178,5 @@ public class AutoSaveGenerator : IIncrementalGenerator
         sb.AppendLine("}");
         File.WriteAllText($@"E:\Projects\Github Clone\JsonSettings\src\JsonSettings.AutoSaveGenerator\all.txt", sb.ToString());
         return sb.ToString();
-    }
-
-    private class ClassInfo
-    {
-        public string Accessibility { get; set; } = "public";
-        public string ClassName { get; set; }
-        public string Namespace { get; set; }
-        public List<PropertyInfo> Properties { get; set; } = new();
-        public List<string> BaseTypes { get; set; } = new();
-    }
-
-    private class PropertyInfo
-    {
-        public string Name { get; set; }
-        public string Type { get; set; }
-        public bool IsVirtual { get; set; }
-        public bool IsOverride { get; set; }
-        public string? DefaultValue { get; set; }
-        public List<string> Attributes { get; set; } = new();
-    }
-}
-public static class StringExtensions
-{
-    public static string FirstCharToUpper(this string input)
-    {
-        input = ConvertToPropertyName(input);
-        return input switch
-        {
-            null => throw new ArgumentNullException(nameof(input)),
-            "" => throw new ArgumentException($"{nameof(input)} cannot be empty", nameof(input)),
-            _ => input[0].ToString().ToUpper() + input.Substring(1)
-        };
-    }
-
-    public static string ConvertToPropertyName(string inputName)
-    {
-        // Remove common prefixes
-        if (inputName.StartsWith("_"))
-            inputName = inputName.Substring(1);
-        else if (inputName.StartsWith("m_"))
-            inputName = inputName.Substring(2);
-
-        return inputName;
     }
 }
