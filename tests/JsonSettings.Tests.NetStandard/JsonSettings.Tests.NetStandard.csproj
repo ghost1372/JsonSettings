@@ -21,7 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-	<ProjectReference Include="..\..\src\JsonSettings.Autosave\JsonSettings.Autosave.csproj" />
     <ProjectReference Include="..\..\src\JsonSettings\JsonSettings.csproj" />
   </ItemGroup>
 

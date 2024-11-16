@@ -2,7 +2,7 @@
 
 namespace Nucs.JsonSettings.Autosave;
 
-public static class StringExtensions
+public static partial class StringExtensions
 {
     public static string FirstCharToUpper(this string input)
     {

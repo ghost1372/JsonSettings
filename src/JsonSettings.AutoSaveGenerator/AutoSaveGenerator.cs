@@ -6,7 +6,6 @@ using Microsoft.CodeAnalysis.Text;
 using System.Linq;
 using Microsoft.CodeAnalysis.CSharp;
 using System;
-using System.IO;
 
 namespace Nucs.JsonSettings.Autosave;
 
@@ -176,7 +175,6 @@ public class AutoSaveGenerator : IIncrementalGenerator
         }
 
         sb.AppendLine("}");
-        File.WriteAllText($@"E:\Projects\Github Clone\JsonSettings\src\JsonSettings.AutoSaveGenerator\all.txt", sb.ToString());
         return sb.ToString();
     }
 }
