@@ -17,7 +17,7 @@
     <Company>Mahdi Hosseini</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseUrl>https://github.com/Nucs/JsonSettings/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/ghost1372/JsonSettings.AutoSaveGenerator</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/ghost1372/JsonSettings</PackageProjectUrl>
     <PackageIconUrl>https://i.imgur.com/BOExs52.png</PackageIconUrl>
     <Description>A generator for JsonSettings that allows to wrap a class via generator that autosaves.</Description>
     <PackageTags>nucs config file newtonsoft settings json configuration preferences</PackageTags>
